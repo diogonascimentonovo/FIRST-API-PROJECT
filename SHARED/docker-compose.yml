@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bot1:
+    build: ./bot1
+    container_name: bot1
+    restart: unless-stopped
+    environment:
+      - TOKEN_BOT1=SEU_TOKEN_DO_BOT1
+
+  bot2:
+    build: ./bot2
+    container_name: bot2
+    restart: unless-stopped
+    environment:
+      - TOKEN_BOT2=SEU_TOKEN_DO_BOT2
